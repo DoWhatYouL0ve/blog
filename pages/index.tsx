@@ -30,7 +30,7 @@ const Home:FC<HomePropsType> = ({socials}) => {
           <Head>
               <title>Home</title>
           </Head>
-          <h1>Home</h1>
+          <h1>Next JS application</h1>
           <Socials socials={socials}/>
       </div>
   )

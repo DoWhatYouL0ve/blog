@@ -9,7 +9,9 @@ const App = ({ Component, pageProps }: AppProps) => {
     <main>
       <Component {...pageProps} />
     </main>
-    <Image src={mainPic} width={500} height={350} alt={'main pic'} placeholder={"blur"}/>
+    <div style={{'margin':'0 auto'}}>
+      <Image src={mainPic} width={500} height={350} alt={'main pic'} placeholder={"blur"}/>
+    </div>
   </Layout>
 
 }
