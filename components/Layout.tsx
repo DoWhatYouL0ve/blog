@@ -1,10 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
 import Header from "./Header";
 import Footer from "./Footer";
+import {FC, ReactNode} from "react";
 
-const Layout = ({children}:any) => {
+type LayoutPropsType = {
+    children: ReactNode
+}
+
+const Layout:FC<LayoutPropsType> = ({children}) => {
     return(
         <>
            <Header/>

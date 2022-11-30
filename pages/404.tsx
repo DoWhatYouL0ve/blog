@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/404.module.scss'
 import {useEffect} from "react";
 import {useRouter} from "next/router";
@@ -7,14 +6,18 @@ import {useRouter} from "next/router";
 const Error = () => {
 
     const router = useRouter()
-        setTimeout(()=>{
+
+    useEffect(()=> {
+        const timeout = setTimeout(()=>{
             router.push('/')
         }, 3000)
-    useEffect(()=> {
-
+        return ()=>clearTimeout(timeout)
     },[router])
     return(
         <div className={styles.wrapper}>
+            <Head>
+                <title>404</title>
+            </Head>
             <h1>404 error </h1>
             <p>Something went wrong ...</p>
         </div>

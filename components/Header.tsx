@@ -1,9 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import { FC } from "react";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header:FC = () => {
     return(
         <header>
             <Navbar/>

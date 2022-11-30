@@ -1,8 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import {FC} from "react";
 
-const Footer = () => {
+const Footer:FC = () => {
     return(
         <footer>
             <h1>Footer</h1>
